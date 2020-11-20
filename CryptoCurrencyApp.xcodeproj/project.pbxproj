@@ -13,6 +13,8 @@
 		542F33E02567DFFB0040401B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542F33DE2567DFFB0040401B /* Main.storyboard */; };
 		542F33E22567DFFF0040401B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542F33E12567DFFF0040401B /* Assets.xcassets */; };
 		542F33E52567DFFF0040401B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542F33E32567DFFF0040401B /* LaunchScreen.storyboard */; };
+		542F33EE2567E4EB0040401B /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542F33ED2567E4EB0040401B /* CryptoTableViewCell.swift */; };
+		542F33F62567E9F50040401B /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542F33F52567E9F50040401B /* CryptoCurrency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		542F33E12567DFFF0040401B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542F33E42567DFFF0040401B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542F33E62567DFFF0040401B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542F33ED2567E4EB0040401B /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		542F33F52567E9F50040401B /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		542F33D72567DFFB0040401B /* CryptoCurrencyApp */ = {
 			isa = PBXGroup;
 			children = (
-				542F33D82567DFFB0040401B /* AppDelegate.swift */,
-				542F33DA2567DFFB0040401B /* SceneDelegate.swift */,
-				542F33DC2567DFFB0040401B /* ViewController.swift */,
+				542F33F42567E8890040401B /* Service */,
+				542F33F32567E8770040401B /* ViewModel */,
+				542F33F12567E86C0040401B /* Model */,
+				542F33F22567E8720040401B /* View */,
 				542F33DE2567DFFB0040401B /* Main.storyboard */,
 				542F33E12567DFFF0040401B /* Assets.xcassets */,
 				542F33E32567DFFF0040401B /* LaunchScreen.storyboard */,
 				542F33E62567DFFF0040401B /* Info.plist */,
 			);
 			path = CryptoCurrencyApp;
+			sourceTree = "<group>";
+		};
+		542F33F12567E86C0040401B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				542F33F52567E9F50040401B /* CryptoCurrency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542F33F22567E8720040401B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				542F33D82567DFFB0040401B /* AppDelegate.swift */,
+				542F33DA2567DFFB0040401B /* SceneDelegate.swift */,
+				542F33DC2567DFFB0040401B /* ViewController.swift */,
+				542F33ED2567E4EB0040401B /* CryptoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542F33F32567E8770040401B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		542F33F42567E8890040401B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542F33EE2567E4EB0040401B /* CryptoTableViewCell.swift in Sources */,
 				542F33DD2567DFFB0040401B /* ViewController.swift in Sources */,
 				542F33D92567DFFB0040401B /* AppDelegate.swift in Sources */,
+				542F33F62567E9F50040401B /* CryptoCurrency.swift in Sources */,
 				542F33DB2567DFFB0040401B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
